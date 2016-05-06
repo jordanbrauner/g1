@@ -13,3 +13,29 @@
  *= require_tree .
  *= require_self
  */
+
+ /*****************************************
+ NORMALIZE
+ *****************************************/
+
+ * {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   // border: 1px solid red;
+ }
+
+ a {
+   text-decoration: none;
+   color: white;
+ }
+
+ /*****************************************
+ CORE
+ *****************************************/
+
+ body {
+   width: 100%;
+   min-height: 100em;
+   background-color: #333;
+ }

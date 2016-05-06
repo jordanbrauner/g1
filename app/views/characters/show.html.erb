@@ -5,4 +5,5 @@
   <img src="<%= @character.image %>" alt="Character image" />
 </section>
 
+<%= link_to 'Edit Character', edit_character_path(@character) %>
 <%= link_to 'Delete Character', character_path(@character), method: :delete, class: 'edit' %>
