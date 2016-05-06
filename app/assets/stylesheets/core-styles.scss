@@ -1,0 +1,89 @@
+/*****************************************
+NORMALIZE
+*****************************************/
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  // border: 1px solid red;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/*****************************************
+CORE
+*****************************************/
+
+body {
+  width: 100%;
+  min-height: 100em;
+  background-color: #333;
+  // box-shadow: inset 0px 0px 2000px 100px rgba(0, 0, 0, 0.5);
+}
+
+section {
+  padding: 2em 5% 2em 5%;
+}
+
+/*****************************************
+NAV
+*****************************************/
+
+nav {
+  height: 5em;
+  width: 90%;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#nav-left {
+  width: 10em;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#nav-left h1 {
+  font-family: sans-serif;
+  font-size: 2.25em;
+  font-weight: bolder;
+  margin-right: .1em;
+}
+
+#nav-left h2 {
+  border-top: 3px solid white;
+  padding-top: .5em;
+  font-family: sans-serif;
+  font-size: .6em;
+  font-weight: lighter;
+  text-transform: uppercase;
+  color: #777;
+}
+
+#nav-right {
+  width: 25em;
+  display: flex;
+  justify-content: space-between;
+}
+
+#nav-right span {
+  font-family: sans-serif;
+  font-weight: lighter;
+  font-size: .75em;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+#nav-right span:hover {
+  color: red;
+  cursor: pointer;
+}

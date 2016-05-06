@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>G1</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+  <nav>
+    <%= link_to(welcome_index_path) do %>
+      <div id="nav-left">
+        <h1>G1</h1>
+        <h2>Transformers <br /> Database</h2>
+      </div>
+    <% end %>
+    <div id="nav-right">
+      <%= link_to(characters_path) do %>
+        <span>Characters</span>
+      <% end %>
+      <span>Episodes</span>
+      <span>About</span>
+      <span>Log In</span>
+    </div>
+  </nav>
+
+<%= yield %>
+
+</body>
+</html>
