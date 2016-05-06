@@ -1,7 +1,7 @@
 class CharactersController < ApplicationController
 
   def index
-    @characters = Character.all
+    @characters = Character.all.order(:name)
   end
 
   def show
@@ -9,13 +9,15 @@ class CharactersController < ApplicationController
   end
 
   def new
+    @character = Character.new
   end
 
   def create
     @character = Character.new(character_params)
 
-    @character.save
-    redirect_to @character
+    if @character.save
+      redirect_to @character
+    end
   end
 
   def edit
@@ -23,6 +25,12 @@ class CharactersController < ApplicationController
   end
 
   def update
+    @character = Character.find(params[:id])
+    if @character.update!(character_params)
+      redirect_to @character
+    else
+      render :edit
+    end
   end
 
   def destroy
@@ -34,7 +42,7 @@ class CharactersController < ApplicationController
 
   private
     def character_params
-      params.require(:character).permit(:name, :title, :bio, :image)
+      params.require(:character).permit(:name, :title, :bio, :affiliation, :image)
     end
 
 end

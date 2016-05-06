@@ -1,9 +1,19 @@
 <section>
-  <p><%= @character.name %></p>
-  <p><%= @character.title %></p>
-  <p><%= @character.bio %></p>
-  <img src="<%= @character.image %>" alt="Character image" />
-</section>
 
-<%= link_to 'Edit Character', edit_character_path(@character) %>
-<%= link_to 'Delete Character', character_path(@character), method: :delete, class: 'edit' %>
+  <div class="character-show-top">
+    <div id="character-bio-left"><img src="<%= @character.image %>" alt="Character image" /></div>
+    <div id="character-bio-right">
+      <h2><%= @character.name %></h2>
+      <h3><%= @character.title %></h3>
+      <p><%= @character.bio %></p>
+    </div>
+  </div>
+
+  <div class="appearances-container">
+    <h3>Appearances</h3>
+
+  </div>
+
+  <%= link_to 'Edit', edit_character_path(@character) %>
+
+</section>

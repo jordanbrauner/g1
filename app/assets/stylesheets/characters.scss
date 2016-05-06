@@ -67,18 +67,18 @@ CHARACTERS#INDEX
 CHARACTERS#EDIT / CHARACTERS#NEW
 *****************************************/
 
-form {
+.character-form {
   margin-top: 2em;
 }
 
-form label {
+.character-form label {
   color: white;
   font-family: 'Roboto', sans-serif;
   font-size: .75em;
   font-weight: normal;
 }
 
-form input[type="text"] {
+.character-form input[type="text"] {
   width: 100%;
   height: 3.5em;
   box-sizing: border-box;
@@ -86,16 +86,87 @@ form input[type="text"] {
   padding-left: 1em;
 }
 
-form textarea {
+.character-form textarea {
   width: 100%;
-  height: 6em;
+  height: 8em;
   box-sizing: border-box;
   margin: .5em 0 1.5em 0;
+  padding-top: 1em;
   padding-left: 1em;
 }
 
-form input[type="submit"] {
+.character-form input[type="submit"] {
   width: 10em;
   height: 3.5em;
   margin: .5em 0 1.5em 0;
+}
+
+/*****************************************
+CHARACTERS#SHOW
+*****************************************/
+
+.character-show-top {
+  display: flex;
+  justify-content: flex-start;
+}
+
+#character-bio-left {
+  width: 20%;
+  min-width: 15em;
+  height: 15em;
+  margin-right: 3em;
+}
+
+#character-bio-left img {
+  width: 15em;
+  height: 15em;
+}
+
+#character-bio-right {
+  width: 60%;
+  color: white;
+}
+
+#character-bio-right h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.25em;
+  font-weight: bolder;
+  letter-spacing: .035em;
+  text-transform: uppercase;
+  padding-bottom: .1em;
+  margin-bottom: .25em;
+  border-bottom: 1px solid #bbb;
+}
+
+#character-bio-right h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  font-weight: 100;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+}
+
+#character-bio-right p {
+  font-family: 'Roboto', sans-serif;
+  font-size: .9em;
+  font-weight: 300;
+  line-height: 1.4em;
+}
+
+// Appearances
+
+.appearances-container {
+  margin-top: 2em;
+}
+
+.appearances-container h3 {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  font-weight: 700;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+  border-bottom: 1px solid #bbb;
+  padding-bottom: .75em;
+  margin-bottom: 2em;
 }
