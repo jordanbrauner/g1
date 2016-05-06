@@ -1,28 +1,5 @@
-== README
+**README**
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a little pet project of mine. Its current primary purpose is to be a clean and organized character database for the Transformers cartoon from the 80's.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+After a recent nostalgia binge I was interested in finding a quick way to find all appearances of a character by episode, as well as their first and last. This site is both a solution to this problem as well as a test bed for cleanly visualizing data for wiki-like websites.

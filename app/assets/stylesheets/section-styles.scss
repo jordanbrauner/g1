@@ -1,0 +1,84 @@
+/*****************************************
+COMMON STYLES
+*****************************************/
+
+section {
+  padding: 2em 5% 2em 5%;
+  width: 90%;
+}
+
+section h1 {
+  display: flex;
+  align-items: center;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 2.75em;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+.section-title-search {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.section-title-search h1 {
+  width: 6em;
+  margin-right: 1.15em;
+}
+
+#search-bar {
+  width: 100%;
+}
+
+#search-bar input[type="text"] {
+  width: 97%;
+  height: 3.5em;
+  background-color: #222;
+  padding-left: 3%;
+  color: #888;
+  font-family: 'Roboto', sans-serif;
+  font-weight: light;
+  font-size: 1.15em;
+  letter-spacing: .035em;
+  display: flex;
+  align-items: center;
+}
+
+/*****************************************
+CHARACTERS STYLES
+*****************************************/
+
+.characters-container {
+  width: 100%;
+  margin-top: 2em;
+}
+
+.characters-container span h2 {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1.5em;
+  font-weight: lighter;
+  color: #ccc;
+  margin-bottom: .5em;
+
+}
+
+.characters-container div {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.character-portrait {
+  height: 5em;
+  width: 5em;
+  margin: 0em 1em 1em 0em;
+  background-color: #aaa;
+  transition: background-color .25s ease;
+}
+
+.character-portrait:hover {
+  background-color: white;
+  cursor: pointer;
+}
