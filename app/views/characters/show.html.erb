@@ -2,4 +2,7 @@
   <p><%= @character.name %></p>
   <p><%= @character.title %></p>
   <p><%= @character.bio %></p>
+  <img src="<%= @character.image %>" alt="Character image" />
 </section>
+
+<%= link_to 'Delete Character', character_path(@character), method: :delete, class: 'edit' %>

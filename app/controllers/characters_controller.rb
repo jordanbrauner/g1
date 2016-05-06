@@ -1,6 +1,7 @@
 class CharactersController < ApplicationController
 
   def index
+    @characters = Character.all
   end
 
   def show
@@ -17,9 +18,22 @@ class CharactersController < ApplicationController
     redirect_to @character
   end
 
+  def edit
+  end
+
+  def update
+  end
+
+  def destroy
+    @character = Character.find(params[:id])
+    if @character.destroy
+      redirect_to characters_path
+    end
+  end
+
   private
     def character_params
-      params.require(:character).permit(:name, :title, :bio)
+      params.require(:character).permit(:name, :title, :bio, :image)
     end
 
 end

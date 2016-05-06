@@ -70,15 +70,44 @@ CHARACTERS STYLES
   flex-wrap: wrap;
 }
 
+.new-character-container {
+  margin-top: 1em;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  font-family: 'Roboto', sans-serif;
+  font-size: .75em;
+}
+
+.new-character-container:hover {
+  cursor: pointer;
+}
+
 .character-portrait {
-  height: 5em;
-  width: 5em;
-  margin: 0em 1em 1em 0em;
+  height: 9em;
+  width: 9em;
+  margin: 0em 1em 3em 0em;
   background-color: #aaa;
   transition: background-color .25s ease;
 }
 
 .character-portrait:hover {
-  background-color: white;
   cursor: pointer;
+  opacity: 0.8;
+}
+
+.character-portrait:hover p {
+  color: white;
+}
+
+.character-portrait p {
+  font-family: 'Roboto Condensed';
+  font-size: .85em;
+  font-weight: normal;
+  color: #ccc;
+}
+
+.character-image {
+  height: 100%;
+  width: 100%;
 }
