@@ -22,16 +22,33 @@ CHARACTERS#INDEX
 }
 
 .new-character-container {
-  margin-top: 1em;
   width: 100%;
+  margin-top: 1em;
   display: flex;
   justify-content: flex-end;
   font-family: 'Roboto', sans-serif;
   font-size: .75em;
 }
 
-.new-character-container:hover {
+.new-character-container div {
+  display: flex;
+  justify-content: flex-end;
+  width: 9em;
+}
+
+.new-character-container div:hover {
   cursor: pointer;
+}
+
+.new-character-container div:hover i {
+  color: red;
+}
+
+.new-character-container i {
+  font-size: 1.25em;
+  position: relative;
+  top: .05em;
+  margin-left: .5em;
 }
 
 .character-portrait {
@@ -44,7 +61,10 @@ CHARACTERS#INDEX
 
 .character-portrait:hover {
   cursor: pointer;
-  opacity: 0.8;
+}
+
+.character-portrait:hover img {
+  opacity: 0.9;
 }
 
 .character-portrait:hover p {
@@ -84,21 +104,30 @@ CHARACTERS#EDIT / CHARACTERS#NEW
   box-sizing: border-box;
   margin: .5em 0 1.5em 0;
   padding-left: 1em;
+  font-size: .85em;
 }
 
 .character-form textarea {
   width: 100%;
-  height: 8em;
+  height: 10em;
   box-sizing: border-box;
   margin: .5em 0 1.5em 0;
   padding-top: 1em;
   padding-left: 1em;
+  font-size: .85em;
 }
 
 .character-form input[type="submit"] {
   width: 10em;
   height: 3.5em;
   margin: .5em 0 1.5em 0;
+  transition: all .1s ease;
+}
+
+.character-form input[type="submit"]:hover {
+  background-color: red;
+  color: white;
+  cursor: pointer;
 }
 
 /*****************************************

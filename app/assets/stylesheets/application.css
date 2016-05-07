@@ -12,30 +12,50 @@
  *
  *= require_tree .
  *= require_self
- */
+*/
 
- /*****************************************
- NORMALIZE
- *****************************************/
+/*****************************************
+NORMALIZE
+*****************************************/
 
- * {
-   margin: 0;
-   padding: 0;
-   border: 0;
-   // border: 1px solid red;
- }
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
 
- a {
-   text-decoration: none;
-   color: white;
- }
+a {
+  text-decoration: none;
+  color: white;
+}
 
- /*****************************************
- CORE
- *****************************************/
+p {
+  font-family: 'Roboto', sans-serif;
+}
 
- body {
-   width: 100%;
-   min-height: 100em;
-   background-color: #333;
- }
+/*****************************************
+CORE
+*****************************************/
+
+body {
+  width: 100%;
+  min-height: 100em;
+  background-color: #333;
+}
+
+.breadcrumbs {
+  margin-bottom: 1.5em;
+}
+
+.breadcrumbs p {
+  font-size: .85em;
+  color: white;
+}
+
+.breadcrumbs i {
+  margin-right: .5em;
+}
+
+.breadcrumbs:hover p {
+  color: red;
+}

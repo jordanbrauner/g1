@@ -6,11 +6,12 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
   <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic|Roboto:300,300italic,400,100,100italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-aNUYGqSUL9wG/vP7+cWZ5QOM4gsQou3sBfWRr/8S3R1Lv0rysEmnwsRKMbhiQX/O" crossorigin="anonymous">
 </head>
 <body>
 
   <nav>
-    <%= link_to(welcome_index_path) do %>
+    <%= link_to(characters_path) do %>
       <div id="nav-left">
         <h1>G1</h1>
         <h2>Transformers <br /> Database</h2>

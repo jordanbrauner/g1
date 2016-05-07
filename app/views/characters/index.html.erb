@@ -8,11 +8,13 @@
   </div>
 
   <div class="new-character-container">
-    <%= link_to(new_character_path) do %>
+    <div>
+      <%= link_to(new_character_path) do %>
       <div>
-        <p>Add Character</p>
+        <p>Add Character <i class="fa fa-plus" aria-hidden="true"></i></p>
       </div>
-    <% end %>
+      <% end %>
+    </div>
   </div>
 
   <div class="characters-container">
