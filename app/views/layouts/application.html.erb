@@ -9,32 +9,36 @@
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-aNUYGqSUL9wG/vP7+cWZ5QOM4gsQou3sBfWRr/8S3R1Lv0rysEmnwsRKMbhiQX/O" crossorigin="anonymous">
 </head>
 <body>
+  <div id="body-background">
 
-  <nav>
-    <%= link_to(characters_path) do %>
-      <div id="nav-left">
-        <h1>G1</h1>
-        <h2>Transformers <br /> Database</h2>
-      </div>
-    <% end %>
-    <div id="nav-right">
+    <nav>
       <%= link_to(characters_path) do %>
-        <span>Characters</span>
+        <div id="nav-left">
+          <h1>G1</h1>
+          <h2>Transformers <br /> Database</h2>
+        </div>
       <% end %>
-      <%= link_to(episodes_path) do %>
-        <span>Episodes</span>
-      <% end %>
-      <span>About</span>
-      <span>Login</span>
-    </div>
-  </nav>
+      <div id="nav-right">
+        <%= link_to(characters_path) do %>
+          <span>Characters</span>
+        <% end %>
+        <%= link_to(episodes_path) do %>
+          <span>Episodes</span>
+        <% end %>
+        <span>About</span>
+        <span>Login</span>
+      </div>
+    </nav>
 
-  <%= yield %>
+    <%= yield %>
 
-  <footer>
-    <div>
-    </div>
-  </footer>
+    <footer>
+      <div>
+      </div>
+    </footer>
+
+  <!-- // Body's background image -->
+  </div>
 
 </body>
 </html>

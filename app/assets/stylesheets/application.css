@@ -41,6 +41,15 @@ body {
   width: 100%;
   min-height: 40em;
   background-color: #333;
+  background-image: url(http://i.imgur.com/vcmwQxW.png);
+  background-size: 18em;
+
+}
+
+#body-background {
+  box-shadow: inset 0em 2em 10em 3em rgba(0, 0, 0, 0.2);
+  background-color: rgba(50, 50, 50, 0.6);
+  /*background-color: white;*/
 }
 
 .breadcrumbs {

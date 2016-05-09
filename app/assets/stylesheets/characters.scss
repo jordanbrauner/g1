@@ -22,9 +22,9 @@ CHARACTERS#INDEX
 }
 
 .character-portrait {
-  height: 9em;
-  width: 9em;
-  margin: 0em 1em 3em 0em;
+  height: 8em;
+  width: 8em;
+  margin: 0em 1em 2.75em 0em;
   background-color: #aaa;
   transition: background-color .25s ease;
 }
@@ -42,8 +42,9 @@ CHARACTERS#INDEX
 }
 
 .character-portrait p {
+  margin-top: 0.1em;
   font-family: 'Roboto Condensed';
-  font-size: .85em;
+  font-size: .9em;
   font-weight: normal;
   color: #ccc;
 }
