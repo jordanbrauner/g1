@@ -26,6 +26,30 @@
   <div class="appearances-container">
     <h3>Appearances</h3>
 
+    <h2 class="episode-subtitle">The Miniseries</h2>
+
+    <div class="season-container">
+      <% @miniseries.each do |episode| %>
+        <div class="episode-box">
+          <%= link_to episode do %>
+            <div></div>
+          <% end %>
+        </div>
+      <% end %>
+    </div>
+
+    <h2 class="episode-subtitle">Season One</h2>
+
+    <div class="season-container">
+      <% @seasonOne.each do |episode| %>
+        <div class="episode-box">
+          <%= link_to episode do %>
+            <div></div>
+          <% end %>
+        </div>
+      <% end %>
+    </div>
+
   </div>
 
   <%= link_to 'Edit', edit_character_path(@character) %>

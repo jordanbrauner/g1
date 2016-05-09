@@ -1,0 +1,41 @@
+/*****************************************
+COMMON STYLES
+*****************************************/
+
+.episode-subtitle {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1.25em;
+  font-weight: lighter;
+  color: #ccc;
+  margin-bottom: .25em;
+}
+
+/*****************************************
+EPISODES#INDEX
+*****************************************/
+
+.season-container {
+  margin-top: .5em;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.season-container {
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+
+
+.season-container div {
+  height: 2.75em;
+  width: 2.75em;
+  background-color: #666;
+  margin: 0em .5em .5em 0em;
+}
+
+.season-container div:hover {
+  opacity: 0.7;
+}

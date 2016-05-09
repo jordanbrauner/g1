@@ -7,7 +7,7 @@
     </form>
   </div>
 
-  <div class="new-character-container">
+  <div class="new-entry-container">
     <div>
       <%= link_to(new_character_path) do %>
       <div>
@@ -22,7 +22,23 @@
       <h2>Autobots</h2>
     </span>
     <div>
-      <% @characters.each do |character| %>
+      <% @autobots.each do |character| %>
+        <div class="character-portrait">
+          <%= link_to character do %>
+            <%= image_tag character.image, class: "character-image" %>
+            <p><%= character.name %></p>
+          <% end %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+
+  <div class="characters-container">
+    <span>
+      <h2>Dinobots</h2>
+    </span>
+    <div>
+      <% @dinobots.each do |character| %>
         <div class="character-portrait">
           <%= link_to character do %>
             <%= image_tag character.image, class: "character-image" %>

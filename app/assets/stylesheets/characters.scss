@@ -21,36 +21,6 @@ CHARACTERS#INDEX
   flex-wrap: wrap;
 }
 
-.new-character-container {
-  width: 100%;
-  margin-top: 1em;
-  display: flex;
-  justify-content: flex-end;
-  font-family: 'Roboto', sans-serif;
-  font-size: .75em;
-}
-
-.new-character-container div {
-  display: flex;
-  justify-content: flex-end;
-  width: 9em;
-}
-
-.new-character-container div:hover {
-  cursor: pointer;
-}
-
-.new-character-container div:hover i {
-  color: red;
-}
-
-.new-character-container i {
-  font-size: 1.25em;
-  position: relative;
-  top: .05em;
-  margin-left: .5em;
-}
-
 .character-portrait {
   height: 9em;
   width: 9em;

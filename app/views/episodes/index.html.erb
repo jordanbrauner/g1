@@ -1,0 +1,45 @@
+<section class="section-episodes">
+
+  <div class="section-title-search">
+    <h1>Episodes</h1>
+    <form id="search-bar">
+      <input type="text" placeholder="Search" />
+    </form>
+  </div>
+
+  <div class="new-entry-container">
+    <div>
+      <%= link_to(new_episode_path) do %>
+      <div>
+        <p>Add Episode <i class="fa fa-plus" aria-hidden="true"></i></p>
+      </div>
+      <% end %>
+    </div>
+  </div>
+
+
+  <h2 class="episode-subtitle">The Miniseries</h2>
+
+  <div class="season-container">
+    <% @miniseries.each do |episode| %>
+      <div class="episode-box">
+        <%= link_to episode do %>
+          <div></div>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
+
+  <h2 class="episode-subtitle">Season One</h2>
+
+  <div class="season-container">
+    <% @seasonOne.each do |episode| %>
+      <div class="episode-box">
+        <%= link_to episode do %>
+          <div></div>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
+
+</section>

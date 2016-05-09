@@ -2,10 +2,14 @@ class CharactersController < ApplicationController
 
   def index
     @characters = Character.all.order(:name)
+    @autobots = Character.where(affiliation: 'Autobot').order(:name)
+    @dinobots = Character.where(affiliation: 'Dinobot').order(:name)
   end
 
   def show
     @character = Character.find(params[:id])
+    @miniseries = Episode.where(season: 'Miniseries').order(:episode)
+    @seasonOne = Episode.where(season: '1').order(:episode)
   end
 
   def new

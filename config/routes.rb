@@ -1,10 +1,26 @@
 Rails.application.routes.draw do
 
-  get 'welcome/index'
-  resources :characters
-
+  # Root
   root 'characters#index'
-  # root 'welcome#index'
+
+  get 'welcome/index'
+
+  # Routes
+  resources :characters do
+    resources :episodes do
+      member do
+        post 'add_to_episode'
+        delete 'remove_from_episode'
+      end
+    end
+  end
+
+  resources :episodes
+
+end
+
+
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -60,4 +76,3 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-end

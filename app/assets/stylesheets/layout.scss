@@ -77,6 +77,8 @@ section h1 {
   text-transform: uppercase;
 }
 
+/* Search bars */
+
 .section-title-search {
   width: 100%;
   display: flex;
@@ -88,6 +90,39 @@ section h1 {
   width: 6em;
   margin-right: 1.15em;
 }
+
+/* New Entries */
+
+.new-entry-container {
+  width: 100%;
+  margin-top: 1em;
+  display: flex;
+  justify-content: flex-end;
+  font-family: 'Roboto', sans-serif;
+  font-size: .75em;
+}
+
+.new-entry-container div {
+  display: flex;
+  justify-content: flex-end;
+  width: 9em;
+}
+
+.new-entry-container div:hover {
+  cursor: pointer;
+}
+
+.new-entry-container div:hover i {
+  color: red;
+}
+
+.new-entry-container i {
+  font-size: 1.25em;
+  position: relative;
+  top: .05em;
+  margin-left: .5em;
+}
+
 
 #search-bar {
   width: 100%;
@@ -107,6 +142,7 @@ section h1 {
   display: flex;
   align-items: center;
 }
+
 
 /*****************************************
 FOOTER
