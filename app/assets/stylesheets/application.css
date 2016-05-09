@@ -29,7 +29,7 @@ a {
   color: white;
 }
 
-p {
+p, span {
   font-family: 'Roboto', sans-serif;
 }
 
@@ -47,15 +47,18 @@ body {
   margin-bottom: 1.5em;
 }
 
-.breadcrumbs p {
+.breadcrumbs span {
   font-size: .85em;
   color: white;
 }
 
 .breadcrumbs i {
-  margin-right: .5em;
+  position: relative;
+  top: .09em;
+  font-size: 1.15em;
+  margin-right: .25em;
 }
 
-.breadcrumbs:hover p {
+.breadcrumbs:hover i {
   color: red;
 }

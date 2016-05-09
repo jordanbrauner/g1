@@ -152,34 +152,65 @@ CHARACTERS#SHOW
 }
 
 #character-bio-right {
-  width: 60%;
+  width: 100%;
   color: white;
 }
 
-#character-bio-right h2 {
+#character-bio-right div {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: .25em;
+}
+
+#character-bio-right div div {
+  position: relative;
+  left: -.75em;
+  padding-left: .7em;
+  background-color: #58595b;
+  width: 100%;
+  height: 3em;
+}
+
+#character-bio-right div img {
+  position: relative;
+  height: 3em;
+  width: auto;
+  right: 1em;
+  transform: scaleY(-1);
+}
+
+#character-bio-right div h2 {
+  position: relative;
+  top: .15em;
   font-family: 'Roboto', sans-serif;
-  font-size: 2.25em;
+  font-size: 2em;
   font-weight: bolder;
   letter-spacing: .035em;
   text-transform: uppercase;
-  padding-bottom: .1em;
-  margin-bottom: .25em;
-  border-bottom: 1px solid #bbb;
 }
 
-#character-bio-right h3 {
+#character-bio-right h3, #character-bio-right h4 {
   font-family: 'Roboto', sans-serif;
   font-size: 1em;
   font-weight: 100;
   margin-bottom: 1em;
   text-transform: uppercase;
+  letter-spacing: .035em;
+}
+
+#character-bio-right h4 {
+  color: #bbb;
+  margin-right: .25em;
 }
 
 #character-bio-right p {
+  width: 80%;
   font-family: 'Roboto', sans-serif;
   font-size: .9em;
   font-weight: 300;
-  line-height: 1.4em;
+  line-height: 1.45em;
+  letter-spacing: .02em;
+  white-space: pre-line;
 }
 
 // Appearances
